@@ -7,12 +7,12 @@
 
 
             //Mostrar productos listados
-            List<Producto> productos1 = ProductoHandler.ObtenerProducto();
+            //List<Producto> productos1 = ProductoHandler.ObtenerProducto();
 
-            foreach (var producto in productos1)
-            {
-                Console.WriteLine(producto.Description);
-            }
+            //foreach (var producto in productos1)
+            //{
+            //    Console.WriteLine(producto.Description);
+            //}
 
             //Insertar producto
             // Producto producto = new Producto();
@@ -43,11 +43,19 @@
             //}
 
             //Mostrar producto vendido por usuario
-            List<Producto> productos = ProductoVendidoHandler.ObtenerProductosVendidos(1);
+            //List<Producto> productos = ProductoVendidoHandler.ObtenerProductosVendidos(1);
 
-            foreach (var producto in productos)
+            //foreach (var producto in productos)
+            //{
+            //    Console.WriteLine(producto.Description);
+            //}
+
+            // Mostrar ventas por usuario
+            List<Venta> ventas = VentaHandler.ObtenerVentasRealizadas(1);
+
+            foreach (var venta in ventas)
             {
-                Console.WriteLine(producto.Description);
+                Console.WriteLine($"Venta {venta.Id}, realizada por usuario: {venta.IdUser}");
             }
 
 
