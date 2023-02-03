@@ -1,4 +1,7 @@
-﻿namespace Clase13_Manipulando_datos_con_.NET
+﻿using Clase13_Manipulando_datos_con_.NET.Handlers;
+using Clase13_Manipulando_datos_con_.NET.Modelos;
+
+namespace Clase13_Manipulando_datos_con_.NET
 {
     internal class Program
     {

@@ -7,6 +7,7 @@ using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using Clase13_Manipulando_datos_con_.NET.Modelos;
 
 namespace Clase13_Manipulando_datos_con_.NET.Handlers
 {

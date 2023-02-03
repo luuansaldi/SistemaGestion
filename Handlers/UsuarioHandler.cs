@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Clase13_Manipulando_datos_con_.NET.Modelos;
 
 namespace Clase13_Manipulando_datos_con_.NET.Handlers
 {
