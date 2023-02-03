@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase13_Manipulando_datos_con_.NET
+namespace Clase13_Manipulando_datos_con_.NET.Handlers
 {
     internal static class VentaHandler
     {
         public static string cadenaConexion = "Data Source=DESKTOP-DKO2V17;Initial Catalog=SistemaGestion;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        
+
 
         public static List<Venta> ObtenerVentasRealizadas(long idUsuario)
         {

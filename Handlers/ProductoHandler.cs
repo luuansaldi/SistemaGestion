@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase13_Manipulando_datos_con_.NET
+namespace Clase13_Manipulando_datos_con_.NET.Handlers
 {
     internal static class ProductoHandler
     {
@@ -137,19 +137,20 @@ namespace Clase13_Manipulando_datos_con_.NET
 
         }
 
-        
+
         public static int DeleteProducto(long id)
         {
-            using(SqlConnection connection = new SqlConnection(cadenaConexion))
+            using (SqlConnection connection = new SqlConnection(cadenaConexion))
             {
                 try
                 {
                     SqlCommand command = new SqlCommand($"DELETE FROM PRODUCTO WHERE id = {id}", connection);
                     connection.Open();
                     return command.ExecuteNonQuery();
-                }catch(Exception e)
+                }
+                catch (Exception e)
                 {
-                    Console.WriteLine(""+e.Message);
+                    Console.WriteLine("" + e.Message);
                     return -1;
                 }
             }
@@ -157,7 +158,7 @@ namespace Clase13_Manipulando_datos_con_.NET
 
         //public static int UpdateProducto(Producto producto)
         //{
-            
+
         //}
     }
 }
